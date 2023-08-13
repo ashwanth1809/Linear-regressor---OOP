@@ -22,9 +22,15 @@ class LinearRegression:
         figure, axis = plt.subplots(1, 3)
         axis[0].scatter(self.x, self.y, marker='x', c='red')
         axis[0].plot(self.x, y_fit, c='black')
+        axis[0].set_xlabel('X')
+        axis[0].set_ylabel('Y')
         axis[1].plot(range(10000), self.total_cost_list)
         axis[1].set_xlim(-500, 500)
+        axis[1].set_xlabel('Iterations')
+        axis[1].set_ylabel('Cost Function')
         axis[2].plot(range(10000), self.total_cost_list)
+        axis[2].set_xlabel('Iterations')
+        axis[2].set_ylabel('Cost Function')
         plt.show()
 
     def fit(self):
