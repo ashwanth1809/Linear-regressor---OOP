@@ -17,4 +17,4 @@ print(lr.w)
 # Predict new input
 print(lr.predict(5.5))
 # Plot the fit line, and cost function
-mlr.plotter(y_hat)
+lr.plotter(y_hat)
